@@ -21,7 +21,7 @@ namespace Mvc_E_Ticaret_Proje.Models.Siniflar
         [Column(TypeName = "Varchar")]
         [StringLength(250)]
         public string PersonelGorsel { get; set; }
-        public SatisHareket SatisHareket { get; set; }
+        public ICollection<SatisHareket> SatisHarekets { get; set; }
         public Departman Departman { get; set; }
     }
 }
