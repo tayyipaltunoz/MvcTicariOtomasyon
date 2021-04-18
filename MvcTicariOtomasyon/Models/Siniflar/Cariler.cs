@@ -6,7 +6,7 @@ using System.Linq;
 using System.Web;
 using MvcTicariOtomasyon.Models.Siniflar;
 
-namespace Mvc_E_Ticaret_Proje.Models.Siniflar
+namespace MvcTicariOtomasyon.Models.Siniflar
 {
     public class Cariler
     {

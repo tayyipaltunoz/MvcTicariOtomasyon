@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
-namespace Mvc_E_Ticaret_Proje.Models.Siniflar
+namespace MvcTicariOtomasyon.Models.Siniflar
 {
     public class Departman
     {

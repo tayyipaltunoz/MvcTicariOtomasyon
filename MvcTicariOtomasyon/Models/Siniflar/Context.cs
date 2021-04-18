@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Web;
-using Mvc_E_Ticaret_Proje.Models.Siniflar;
+using MvcTicariOtomasyon.Models.Siniflar;
 
 namespace MvcTicariOtomasyon.Models.Siniflar
 {
