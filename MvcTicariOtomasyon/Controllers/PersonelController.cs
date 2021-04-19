@@ -19,13 +19,20 @@ namespace MvcTicariOtomasyon.Controllers
         [HttpGet]
         public ActionResult PersonelEkle()
         {
-
+            List<SelectListItem> dgr1 = (from x in c.Departmen.ToList()
+                                         select new SelectListItem
+                                         {
+                                             Text = x.DepartmanAd,
+                                             Value = x.DepartmanId.ToString()
+                                         }).ToList();
+            ViewBag.dgr1 = dgr1;
             return View();
         }
         [HttpPost]
         public ActionResult PersonelEkle(Personel p)
         {
-            //p.Durum = true;
+
+
             c.Personels.Add(p);
             c.SaveChanges();
             return RedirectToAction("Index");
