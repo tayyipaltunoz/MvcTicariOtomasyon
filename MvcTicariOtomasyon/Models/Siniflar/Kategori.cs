@@ -12,7 +12,7 @@ namespace MvcTicariOtomasyon.Models.Siniflar
         [Key]
         public int KategoriId { get; set; }
         [Column(TypeName = "Varchar")]
-        [StringLength(30)]
+        [StringLength(50)]
         public string KategoriAd { get; set; }
         public ICollection<Urun> Uruns { get; set; }
     }

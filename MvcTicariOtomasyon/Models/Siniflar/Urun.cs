@@ -13,10 +13,10 @@ namespace MvcTicariOtomasyon.Models.Siniflar
         [Key]
         public int UrunId { get; set; }
         [Column(TypeName = "Varchar")]
-        [StringLength(30)]
+        [StringLength(250)]
         public string UrunAd { get; set; }
         [Column(TypeName = "Varchar")]
-        [StringLength(30)]
+        [StringLength(250)]
         public string Marka { get; set; }
         public short Stok { get; set; }
         public decimal AlisFiyati { get; set; }
