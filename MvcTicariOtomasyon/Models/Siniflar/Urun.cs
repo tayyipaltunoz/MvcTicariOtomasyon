@@ -23,7 +23,7 @@ namespace MvcTicariOtomasyon.Models.Siniflar
         public decimal SatisFiyati { get; set; }
         public bool Durum { get; set; }
         [Column(TypeName = "Varchar")]
-        [StringLength(250)]
+        [StringLength(1000)]
         public string UrunGorsel { get; set; }
         public int CategoryId { get; set; }
         public virtual Kategori Kategori { get; set; }
