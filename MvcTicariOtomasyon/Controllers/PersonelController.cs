@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Web;
 using System.Web.Mvc;
 using MvcTicariOtomasyon.Models.Siniflar;
@@ -64,5 +65,11 @@ namespace MvcTicariOtomasyon.Controllers
             return RedirectToAction("Index");
 
         }
+        public ActionResult PersonelListe()
+        {
+            var sorgu = c.Personels.ToList();
+            return View(sorgu);
+        }
+
     }
 }

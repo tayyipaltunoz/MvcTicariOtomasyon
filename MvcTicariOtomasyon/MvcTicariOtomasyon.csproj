@@ -2801,6 +2801,7 @@
     <Content Include="Views\istatistik\Cariler.cshtml" />
     <Content Include="Views\istatistik\UrunlerPartial.cshtml" />
     <Content Include="Views\istatistik\MarkaPartial.cshtml" />
+    <Content Include="Views\Personel\PersonelListe.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
