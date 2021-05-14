@@ -52,7 +52,7 @@ namespace MvcTicariOtomasyon.Controllers
                 var deger12 = context.Uruns.GroupBy(x => x.Marka).OrderByDescending(z => z.Count()).Select(y => y.Key).FirstOrDefault();
                 ViewBag.d12 = deger12;
                 //en çok satan urun
-                var deger13 =context.Uruns.Where(u => u.UrunId == (context.SatisHarekets.GroupBy(x => x.UrunID).OrderByDescending(z => z.Count()).Select(y => y.Key).FirstOrDefault())).Select(k => k.UrunAd).FirstOrDefault();
+                var deger13 = context.Uruns.Where(u => u.UrunId == (context.SatisHarekets.GroupBy(x => x.UrunID).OrderByDescending(z => z.Count()).Select(y => y.Key).FirstOrDefault())).Select(k => k.UrunAd).FirstOrDefault();
                 ViewBag.d13 = deger13;
                 //toplam tutar(kasadaki tutar)
                 var deger14 = context.SatisHarekets.Sum(x => x.ToplamTutar).ToString();
@@ -64,13 +64,64 @@ namespace MvcTicariOtomasyon.Controllers
                 //bugünki kasa
                 var deger16 = context.SatisHarekets.Where(x => x.Tarih == bugun).Sum(y => y.ToplamTutar).ToString();
                 ViewBag.d16 = deger16;
-               
+
             }
             catch (Exception)
             {
-                
+
             }
-           return View();
+            return View();
+        }
+        public ActionResult BasitTablolar()
+        {
+            var sorgu = from x in context.Carilers
+                        group x by x.CariSehir into g
+                        select new SinifGrup
+                        {
+                            Sehir = g.Key,
+                            Sayi = g.Count()
+                        };
+
+
+            return View(sorgu.ToList());
+        }
+        public PartialViewResult Partial1()
+        {
+            var sorgu2 = from x in context.Personels
+                         group x by x.Departman.DepartmanAd into g
+                         select new SinifGrup2
+                         {
+                             Departman = g.Key,
+                             Sayi = g.Count()
+                         };
+
+            return PartialView(sorgu2.ToList());
+        }
+
+        public PartialViewResult Cariler()
+        {
+            var sorgu = context.Carilers.ToList();
+
+            return PartialView(sorgu);
+        }
+        public PartialViewResult UrunlerPartial()
+        {
+            var sorgu = context.Uruns.ToList();
+
+            return PartialView(sorgu);
+        }
+
+        public PartialViewResult MarkaPartial()
+        {
+            var sorgu = from x in context.Uruns
+                         group x by x.Marka into g
+                         select new PartialMarka
+                         {
+                             marka = g.Key,
+                             sayi = g.Count()
+                         };
+
+            return PartialView(sorgu.ToList());
         }
     }
 }
