@@ -4,17 +4,23 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using MvcTicariOtomasyon.Models.Siniflar;
+using WebGrease.Css.Ast.Selectors;
 
 namespace MvcTicariOtomasyon.Controllers
 {
     public class UrunController : Controller
     {
         private Context c = new Context();
-        // GET: Urun
-        public ActionResult Index()
+        // GET: Urun arama
+        public ActionResult Index(string p)
         {
-            var urunler = c.Uruns.Where(x => x.Durum == true).ToList();
-            return View(urunler);
+            
+            var urunler = from x in c.Uruns select x;
+            if (!string.IsNullOrEmpty(p))
+            {
+                urunler = urunler.Where(y => y.UrunAd.Contains(p));
+            }
+            return View(urunler.ToList());
         }
         [HttpGet]
         public ActionResult YeniUrun()
