@@ -17,7 +17,6 @@ namespace MvcTicariOtomasyon.Models.Siniflar
         public string CariAd { get; set; }
         [Column(TypeName = "Varchar")]
         [StringLength(30)]
-        [Required(ErrorMessage = "Bu alanı boş geçemezsiniz")]
         public string CariSoyad { get; set; }
         [Column(TypeName = "Varchar")]
         [StringLength(30)]
@@ -28,6 +27,12 @@ namespace MvcTicariOtomasyon.Models.Siniflar
         [Column(TypeName = "Varchar")]
         [StringLength(50)]
         public string CariMail { get; set; }
+        [Column(TypeName = "Varchar")]
+        [StringLength(20)]
+        public string CariSifre { get; set; }
+        [Column(TypeName = "Varchar")]
+        [StringLength(10)]
+        public string CariTelefon { get; set; }
 
         public bool Durum { get; set; }
         public ICollection<SatisHareket> SatisHarekets { get; set; }

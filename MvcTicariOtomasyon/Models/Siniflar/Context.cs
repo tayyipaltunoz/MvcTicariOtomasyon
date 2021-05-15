@@ -21,6 +21,7 @@ namespace MvcTicariOtomasyon.Models.Siniflar
         public DbSet<Urun> Uruns { get; set; }
         public DbSet<Detay> Detaylar { get; set; }
         public DbSet<Yapilacak> Yapilacaklar { get; set; }
+       
 
     }
 }
