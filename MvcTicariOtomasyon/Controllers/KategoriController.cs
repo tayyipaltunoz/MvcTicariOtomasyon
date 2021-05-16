@@ -16,7 +16,7 @@ namespace MvcTicariOtomasyon.Controllers
 
         public ActionResult Index(int sayfa = 1)
         {
-            var degerler = _context.Kategoris.ToList().ToPagedList(sayfa,7);
+            var degerler = _context.Kategoris.ToList().ToPagedList(sayfa,10);
             return View(degerler);
         }
 
