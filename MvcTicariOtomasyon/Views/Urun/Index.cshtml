@@ -24,6 +24,7 @@
         <th>Fotoğraf</th>
         <th>Sil</th>
         <th>Güncelle</th>
+        <th>Satış Yap</th>
         
     </tr>
     @foreach (var u in Model)
@@ -45,6 +46,7 @@
             </td>
             <td><a href="/Urun/UrunSil/@u.UrunId" class="btn btn-danger">Sil</a></td>
             <td><a href="/Urun/UrunGetir/@u.UrunId" class="btn btn-success">Güncelle</a></td>
+            <td><a href="/Urun/SatisYap/@u.UrunId" class="btn btn-info">Satış Yap</a></td>
         </tr>
     }
 </table>
