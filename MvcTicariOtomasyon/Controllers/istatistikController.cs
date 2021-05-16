@@ -62,7 +62,7 @@ namespace MvcTicariOtomasyon.Controllers
                 var deger15 = context.SatisHarekets.Count(x => x.Tarih == bugun).ToString();
                 ViewBag.d15 = deger15;
                 //bugünki kasa
-                var deger16 = context.SatisHarekets.Where(x => x.Tarih == bugun).Sum(y => y.ToplamTutar).ToString();
+                var deger16 = context.SatisHarekets.Where(x => x.Tarih == bugun).Sum(y => (decimal?)y.ToplamTutar).ToString();
                 ViewBag.d16 = deger16;
 
             }
@@ -114,12 +114,12 @@ namespace MvcTicariOtomasyon.Controllers
         public PartialViewResult MarkaPartial()
         {
             var sorgu = from x in context.Uruns
-                         group x by x.Marka into g
-                         select new PartialMarka
-                         {
-                             marka = g.Key,
-                             sayi = g.Count()
-                         };
+                        group x by x.Marka into g
+                        select new PartialMarka
+                        {
+                            marka = g.Key,
+                            sayi = g.Count()
+                        };
 
             return PartialView(sorgu.ToList());
         }
