@@ -142,6 +142,7 @@
     <Compile Include="Controllers\GaleriController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\istatistikController.cs" />
+    <Compile Include="Controllers\KargoController.cs" />
     <Compile Include="Controllers\KategoriController.cs" />
     <Compile Include="Controllers\LogInController.cs" />
     <Compile Include="Controllers\PersonelController.cs" />
@@ -163,6 +164,8 @@
     <Compile Include="Models\Siniflar\FaturaKalem.cs" />
     <Compile Include="Models\Siniflar\Faturalar.cs" />
     <Compile Include="Models\Siniflar\Gider.cs" />
+    <Compile Include="Models\Siniflar\KargoDetay.cs" />
+    <Compile Include="Models\Siniflar\KargoTakip.cs" />
     <Compile Include="Models\Siniflar\Kategori.cs" />
     <Compile Include="Models\Siniflar\PartialMarka.cs" />
     <Compile Include="Models\Siniflar\Personel.cs" />
@@ -2864,6 +2867,9 @@
     <Content Include="Views\UserPanel\Siparislerim.cshtml" />
     <Content Include="Views\Alert\Index.cshtml" />
     <Content Include="Views\Urun\SatisYap.cshtml" />
+    <Content Include="Views\Kargo\Index.cshtml" />
+    <Content Include="Views\Kargo\YeniKargo.cshtml" />
+    <Content Include="Views\Kargo\KargoTakip.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
