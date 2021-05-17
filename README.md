@@ -1,10 +1,13 @@
 # MvcTicariOtomasyon
+Sql ~ Entity Framework ~ Code First ~ Html5 ~ Css3 ~ Bootstrap4
+
 Asp.Net Mvc5 ile Online Ticari Otomasyon Projesi
 
 Cari Hesap Takibi,
 Fatura Takibi,
 Gelir Gider Takibi,
-Raporlama
+Raporlama,
+İstatistik
 
 
 
