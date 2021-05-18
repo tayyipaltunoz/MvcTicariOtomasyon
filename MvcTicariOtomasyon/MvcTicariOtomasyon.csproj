@@ -174,6 +174,7 @@
     <Compile Include="Models\Siniflar\KargoDetay.cs" />
     <Compile Include="Models\Siniflar\KargoTakip.cs" />
     <Compile Include="Models\Siniflar\Kategori.cs" />
+    <Compile Include="Models\Siniflar\Mesaj.cs" />
     <Compile Include="Models\Siniflar\PartialMarka.cs" />
     <Compile Include="Models\Siniflar\Personel.cs" />
     <Compile Include="Models\Siniflar\SatisHareket.cs" />
@@ -2884,11 +2885,16 @@
     <Content Include="Views\Grafik\Index4.cshtml" />
     <Content Include="Views\Grafik\Index5.cshtml" />
     <Content Include="Views\Grafik\Index6.cshtml" />
+    <Content Include="Views\UserPanel\GelenMesajlar.cshtml" />
+    <Content Include="Views\UserPanel\GidenMesajlar.cshtml" />
+    <Content Include="Views\UserPanel\MesajDetay.cshtml" />
+    <Content Include="Views\UserPanel\YeniMesaj.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Theme\Image\" />
     <Folder Include="Theme\web2\images\" />
+    <Folder Include="Views\Mesaj\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
