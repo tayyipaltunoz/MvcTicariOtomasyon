@@ -35,7 +35,7 @@
                     <a class="dropdown-item" href="/UserPanel/GelenMesajlar">Mesajlar</a>
                     <a class="dropdown-item" href="/UserPanel/Siparislerim">Hareketler</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="/LogIn/Index">Çıkış Yap</a>
+                    <a class="dropdown-item" href="/UserPanel/LogOut">Çıkış Yap</a>
                 </div>
             </li>
         </ul>
@@ -66,6 +66,55 @@
                             <div class="sb-nav-link-icon"><i class="fas fa-user-friends"></i></div>
                             Personeller
                         </a>
+                        <!--Profil-->
+                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                            <div class="sb-nav-link-icon"><i class="fas fa-sliders-h"></i></div>
+                            Profil
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
+                            <!---->
+                            <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
+                                    Hareketler
+                                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                </a>
+                                <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-parent="#sidenavAccordionPages">
+                                    <nav class="sb-sidenav-menu-nested nav">
+                                        <a class="nav-link" href="/UserPanel/siparislerim">Siparişlerim</a>
+                                        <a class="nav-link" href="/Kargo/Index">Kargo Takip</a>
+                                    </nav>
+                                </div>
+                            </nav>
+                            <!---->
+                            
+                            <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
+                                    Ayarlar
+                                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                </a>
+                                <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-parent="#sidenavAccordionPages">
+                                    <nav class="sb-sidenav-menu-nested nav">
+                                        <a class="nav-link" href="/UserPanel/Index">Bilgileri Güncelle</a>
+                                    </nav>
+                                </div>
+                            </nav>
+                            <!---->
+                            <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
+                                    Mesaj Kutusu
+                                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                </a>
+                                <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-parent="#sidenavAccordionPages">
+                                    <nav class="sb-sidenav-menu-nested nav">
+                                        <a class="nav-link" href="/UserPanel/GelenMesajlar">Gelen Kutusu</a>
+                                        <a class="nav-link" href="/UserPanel/GidenMesajlar">Line Grafik</a>
+                                        <a class="nav-link" href="/UserPanel/YeniMesaj">Column Grafik</a>
+                                    </nav>
+                                </div>
+                            </nav>
+                        </div>
+                        <!--//Profil-->
                         <!--Grafikler-->
                         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
                             <div class="sb-nav-link-icon"><i class="fas fa-chart-pie"></i></div>
@@ -134,7 +183,7 @@
                     </div>
                 </div>
                 <div class="sb-sidenav-footer">
-                    <div class="small">Giriş Yaptı:</div>
+                    <div class="small">Giriş Yaptı: </div>
                     Guest
                 </div>
             </nav>

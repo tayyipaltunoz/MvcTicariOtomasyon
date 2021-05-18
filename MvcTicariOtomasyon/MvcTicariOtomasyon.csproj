@@ -2320,24 +2320,6 @@
     <Content Include="Theme\weblogin\js\jquery-2.1.4.min.js" />
     <Content Include="Theme\weblogin\js\jquery.magnific-popup.js" />
     <Content Include="Theme\weblogin\w3layouts-License.txt" />
-    <Content Include="Theme\webpanel\.gitignore" />
-    <Content Include="Theme\webpanel\css\simple-sidebar.css" />
-    <Content Include="Theme\webpanel\gulpfile.js" />
-    <Content Include="Theme\webpanel\index.html" />
-    <Content Include="Theme\webpanel\vendor\bootstrap\css\bootstrap-grid.css" />
-    <Content Include="Theme\webpanel\vendor\bootstrap\css\bootstrap-grid.min.css" />
-    <Content Include="Theme\webpanel\vendor\bootstrap\css\bootstrap-reboot.css" />
-    <Content Include="Theme\webpanel\vendor\bootstrap\css\bootstrap-reboot.min.css" />
-    <Content Include="Theme\webpanel\vendor\bootstrap\css\bootstrap.css" />
-    <Content Include="Theme\webpanel\vendor\bootstrap\css\bootstrap.min.css" />
-    <Content Include="Theme\webpanel\vendor\bootstrap\js\bootstrap.bundle.js" />
-    <Content Include="Theme\webpanel\vendor\bootstrap\js\bootstrap.bundle.min.js" />
-    <Content Include="Theme\webpanel\vendor\bootstrap\js\bootstrap.js" />
-    <Content Include="Theme\webpanel\vendor\bootstrap\js\bootstrap.min.js" />
-    <Content Include="Theme\webpanel\vendor\jquery\jquery.js" />
-    <Content Include="Theme\webpanel\vendor\jquery\jquery.min.js" />
-    <Content Include="Theme\webpanel\vendor\jquery\jquery.slim.js" />
-    <Content Include="Theme\webpanel\vendor\jquery\jquery.slim.min.js" />
     <Content Include="Theme\Web\.gitignore" />
     <Content Include="Theme\Web\dist\401.html" />
     <Content Include="Theme\Web\dist\404.html" />
@@ -2853,24 +2835,6 @@
     <Content Include="Theme\weblogin\fonts\fontawesome-webfont.woff2" />
     <Content Include="Theme\weblogin\fonts\FontAwesome.otf" />
     <Content Include="Views\LogIn\Register.cshtml" />
-    <Content Include="Theme\webpanel\.travis.yml" />
-    <Content Include="Theme\webpanel\LICENSE" />
-    <Content Include="Theme\webpanel\package-lock.json" />
-    <Content Include="Theme\webpanel\package.json" />
-    <Content Include="Theme\webpanel\README.md" />
-    <Content Include="Theme\webpanel\vendor\bootstrap\css\bootstrap-grid.css.map" />
-    <Content Include="Theme\webpanel\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
-    <Content Include="Theme\webpanel\vendor\bootstrap\css\bootstrap-reboot.css.map" />
-    <Content Include="Theme\webpanel\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
-    <Content Include="Theme\webpanel\vendor\bootstrap\css\bootstrap.css.map" />
-    <Content Include="Theme\webpanel\vendor\bootstrap\css\bootstrap.min.css.map" />
-    <Content Include="Theme\webpanel\vendor\bootstrap\js\bootstrap.bundle.js.map" />
-    <Content Include="Theme\webpanel\vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
-    <Content Include="Theme\webpanel\vendor\bootstrap\js\bootstrap.js.map" />
-    <Content Include="Theme\webpanel\vendor\bootstrap\js\bootstrap.min.js.map" />
-    <Content Include="Theme\webpanel\vendor\jquery\jquery.min.map" />
-    <Content Include="Theme\webpanel\vendor\jquery\jquery.slim.min.map" />
-    <Content Include="Views\Shared\_UserLayout.cshtml" />
     <Content Include="Views\UserPanel\Index.cshtml" />
     <Content Include="Views\UserPanel\Siparislerim.cshtml" />
     <Content Include="Views\Alert\Index.cshtml" />
@@ -2894,7 +2858,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Theme\Image\" />
     <Folder Include="Theme\web2\images\" />
-    <Folder Include="Views\Mesaj\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

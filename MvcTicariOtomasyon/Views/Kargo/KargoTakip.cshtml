@@ -10,14 +10,18 @@
 <br />
 <table class="table table-striped">
     <tr>
+        <th>#</th>
         <th>Açıklama</th>
         <th>Tarih</th>
+
     </tr>
     @foreach (var x in Model)
     {
         <tr>
+            <td>-</td>
             <td>@x.Aciklama</td>
             <td>@x.TarihZaman</td>
         </tr>
     }
 </table>
+

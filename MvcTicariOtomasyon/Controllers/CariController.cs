@@ -7,10 +7,12 @@ using MvcTicariOtomasyon.Models.Siniflar;
 
 namespace MvcTicariOtomasyon.Controllers
 {
+    
     public class CariController : Controller
     {
         private Context c = new Context();
         // GET: Cari
+        [Authorize]
         public ActionResult Index()
         {
             var degerler = c.Carilers.Where(x=>x.Durum==true).ToList();
