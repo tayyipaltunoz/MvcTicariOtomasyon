@@ -2851,6 +2851,7 @@
     <Content Include="Views\UserPanel\MesajDetay.cshtml" />
     <Content Include="Views\UserPanel\YeniMesaj.cshtml" />
     <Content Include="Views\Error\PageError.cshtml" />
+    <Content Include="Views\Home\AnaSayfa.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

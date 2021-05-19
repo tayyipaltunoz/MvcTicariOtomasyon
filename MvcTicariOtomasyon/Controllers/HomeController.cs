@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MvcTicariOtomasyon.Models.Siniflar;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -6,25 +7,21 @@ using System.Web.Mvc;
 
 namespace MvcTicariOtomasyon.Controllers
 {
+    
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        private Context _context = new Context();
+
+        public ActionResult AnaSayfa()
         {
-            return View();
+            var urunler = _context.Uruns.ToList();
+
+           
+            var deger1 = _context.SatisHarekets.Count().ToString();
+            ViewBag.d1 = deger1;
+
+            return View(urunler);
         }
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
     }
 }
