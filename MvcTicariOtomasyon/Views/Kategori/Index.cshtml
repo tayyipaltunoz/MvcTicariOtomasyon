@@ -29,6 +29,10 @@
     }
 </table>
 
-<a href="/Kategori/KategoriEkle" class="btn btn-primary">Kategori Ekle</a>
+<a href="/Kategori/KategoriEkle" class="btn btn-primary" style="margin-bottom: 2%">Kategori Ekle</a>
 
-@Html.PagedListPager((IPagedList)Model, sayfa => Url.Action("Index", new { sayfa }))
+@Html.PagedListPager((IPagedList)Model, sayfa => Url.Action("Index", new { sayfa }), new PagedListRenderOptions
+{
+    LiElementClasses = new List<string>
+    { "page-link"}
+})
