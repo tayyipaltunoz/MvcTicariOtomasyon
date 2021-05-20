@@ -16,9 +16,19 @@ namespace MvcTicariOtomasyon.Controllers
         {
             var urunler = _context.Uruns.ToList();
 
-           
-            var deger1 = _context.SatisHarekets.Count().ToString();
-            ViewBag.d1 = deger1;
+
+            DateTime bugun = DateTime.Today;
+            var deger1 = _context.SatisHarekets.Count(x =>  x.Tarih < bugun).ToString();
+            ViewBag.satis = deger1;
+            //toplam satış
+            var topsat = _context.SatisHarekets.Sum(x => x.ToplamTutar).ToString();
+            ViewBag.topsat = topsat;
+
+            var topstok = _context.Uruns.Sum(x => x.Stok).ToString();
+            ViewBag.topstok = topstok;
+
+            var topurun = _context.Uruns.Count().ToString();
+            ViewBag.topurun = topurun;
 
             return View(urunler);
         }

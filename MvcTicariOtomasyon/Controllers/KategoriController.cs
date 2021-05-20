@@ -16,7 +16,7 @@ namespace MvcTicariOtomasyon.Controllers
 
         public ActionResult Index(int sayfa = 1)
         {
-            var degerler = _context.Kategoris.ToList().ToPagedList(sayfa,10);
+            var degerler = _context.Kategoris.ToList().ToPagedList(sayfa, 10);
             return View(degerler);
         }
 
@@ -46,7 +46,7 @@ namespace MvcTicariOtomasyon.Controllers
         {
             var kategori = _context.Kategoris.Find(id);
             return View("KategoriGetir", kategori);
-           
+
         }
 
         public ActionResult KategoriGuncelle(Kategori k)
@@ -56,6 +56,28 @@ namespace MvcTicariOtomasyon.Controllers
             _context.SaveChanges();
             return RedirectToAction("Index");
 
+        }
+
+        public ActionResult Cascading()
+        {
+            KategoriUrunCascading cs = new KategoriUrunCascading();
+            cs.Kategoriler = new SelectList(_context.Kategoris, "KategoriId", "KategoriAd");
+            cs.Urunler = new SelectList(_context.Uruns, "UrunId", "UrunAd");
+            return View(cs);
+        }
+
+        public ActionResult UrunGetir(int p)
+        {
+            var urunlistesi = (from x in _context.Uruns
+                               join y in _context.Kategoris
+                                   on x.Kategori.KategoriId equals y.KategoriId
+                               where x.Kategori.KategoriId == p
+                               select new
+                               {
+                                   Text = x.UrunAd,
+                                   Value = x.UrunId.ToString()
+                               }).ToList();
+            return Json(urunlistesi, JsonRequestBehavior.AllowGet);
         }
     }
 }

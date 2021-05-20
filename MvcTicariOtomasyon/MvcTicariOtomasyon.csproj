@@ -175,6 +175,7 @@
     <Compile Include="Models\Siniflar\KargoDetay.cs" />
     <Compile Include="Models\Siniflar\KargoTakip.cs" />
     <Compile Include="Models\Siniflar\Kategori.cs" />
+    <Compile Include="Models\Siniflar\KategoriUrunCascading.cs" />
     <Compile Include="Models\Siniflar\Mesaj.cs" />
     <Compile Include="Models\Siniflar\PartialMarka.cs" />
     <Compile Include="Models\Siniflar\Personel.cs" />
@@ -2852,6 +2853,7 @@
     <Content Include="Views\UserPanel\YeniMesaj.cshtml" />
     <Content Include="Views\Error\PageError.cshtml" />
     <Content Include="Views\Home\AnaSayfa.cshtml" />
+    <Content Include="Views\Kategori\Cascading.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

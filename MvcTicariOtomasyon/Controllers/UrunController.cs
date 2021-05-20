@@ -45,7 +45,8 @@ namespace MvcTicariOtomasyon.Controllers
         public ActionResult UrunSil(int id)
         {
             var deger = c.Uruns.Find(id);
-            deger.Durum = false;
+            c.Uruns.Remove(deger);
+            //deger.Durum = false;
             c.SaveChanges();
             return RedirectToAction("Index");
         }

@@ -121,36 +121,36 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div>
     <!-- //login form popup-->
     <!-- personel giriş  popup-->
-    <div class="pop-up">
-        <div id="small-dialog1" class="mfp-hide book-form">
+<div class="pop-up">
+    <div id="small-dialog1" class="mfp-hide book-form">
 
-            <div class="login-form login-form-left">
-                <div class="agile-row">
-                    <h3>Personel Giriş</h3>
+        <div class="login-form login-form-left">
+            <div class="agile-row">
+                <h3>Personel Giriş</h3>
 
-                    <div class="clear"></div>
-                    <div class="login-agileits-top">
-                        @using (Html.BeginForm("AdminLogin", "LogIn", FormMethod.Post))
-                        {
-                            <form action="#" method="post">
-                                <input type="text" class="name" name="KullaniciAd" Placeholder="Kullanıcı Adı" required="" />
-                                <input type="text" class="email" name="Sifre" Placeholder="Şifre" required="" />
-                                <input type="submit" value="Giriş Yap" id="giris">
-                                <script>
-                                    $('giris').click(function() {
+                <div class="clear"></div>
+                <div class="login-agileits-top">
+                    @using (Html.BeginForm("AdminLogin", "LogIn", FormMethod.Post))
+                    {
+                        <form action="#" method="post">
+                            <input type="text" class="name" name="KullaniciAd" Placeholder="Kullanıcı Adı" required="" />
+                            <input type="text" class="email" name="Sifre" Placeholder="Şifre" required="" />
+                            <input type="submit" value="Giriş Yap" id="giris">
+                            <script>
+                                $('giris').click(function() {
 
-                                    });
-                                </script>
-                            </form>
-                        }
+                                });
+                            </script>
+                        </form>
+                    }
 
-                    </div>
                 </div>
             </div>
-
         </div>
+
     </div>
-    <!-- //subscribe form popup-->
+</div>
+<!-- //subscribe form popup-->
     <!-- register form popup-->
     <div class="pop-up">
         <div id="small-dialog2" class="mfp-hide book-form">

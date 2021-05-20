@@ -8,6 +8,7 @@ using MvcTicariOtomasyon.Models.Siniflar;
 
 namespace MvcTicariOtomasyon.Controllers
 {
+    [AllowAnonymous]
     public class LogInController : Controller
     {
         // GET: LogIn
@@ -71,6 +72,12 @@ namespace MvcTicariOtomasyon.Controllers
                 return RedirectToAction("Index", "LogIn");
                 
             }
+        }
+
+        public ActionResult Demo()
+        {
+           
+            return RedirectToAction("AnaSayfa", "Home");
         }
     }
 }
