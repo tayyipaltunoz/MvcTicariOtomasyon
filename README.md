@@ -1,3 +1,5 @@
+![Ekran Görüntüsü (14)](https://user-images.githubusercontent.com/46850860/119105898-7470b880-ba26-11eb-9e32-c38e9995ff79.png)
+![Ekran Görüntüsü (15)](https://user-images.githubusercontent.com/46850860/119105902-75a1e580-ba26-11eb-8d84-2312115cd692.png)
 # MvcTicariOtomasyon
 Sql ~ Entity Framework ~ Code First ~ Html5 ~ Css3 ~ Bootstrap4
 
