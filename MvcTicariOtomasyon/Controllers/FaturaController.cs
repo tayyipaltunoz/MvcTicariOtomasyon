@@ -67,5 +67,14 @@ namespace MvcTicariOtomasyon.Controllers
             c.SaveChanges();
             return RedirectToAction("Index");
         }
+
+        public ActionResult Dinamik()
+        {
+            Dinamik df = new Dinamik();
+            df.deger1 = c.Faturalars.ToList();
+            df.deger2 = c.FaturaKalems.ToList();
+            return View(df);
+
+        }
     }
 }
